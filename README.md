@@ -8,7 +8,7 @@ MyCollatzConjectureBasic.py was the first iteration I programmed before realisin
 
 If you want to find out whether a specific number follows the pattern you can use SingleNumberTester.py but you wont find one that is false. If you do somehow manage to find one it will either detect it is in a loop (that doesnt return to zero) and will return false or will run indefinitely through some other unforeseen methods.
 
-Probably dont use CollatzConjecture.py or CollatzConjectureWithNumba.py. If your really interested in testing large numbers use MyCollatzConjectureBasic.py but dont go over 2^28 unless you are willing to max out RAM, virtual memory and disk for 10+ mins. Especially dont use high numbers if you are on a hard drive (disk thrashing would go crazy). It uses so much memory because it saves all values it knows lead to zero in a set which is checked constantly to reduce the time to calculate each number (very large cache)
+Probably dont use CollatzConjecture.py or CollatzConjectureWithNumba.py. If your really interested in testing large numbers use MyCollatzConjectureBasic.py but dont go over 2^28 unless you are willing to max out RAM, virtual memory and disk for 10+ mins. Especially dont use high numbers if you are on a hard drive (disk thrashing would go crazy). It uses so much memory because it saves all values it knows lead to 1 in a set which is checked constantly to reduce the time to calculate each number (very large cache)
 
 Also warning I used ChatGPT to help me learn multiprocessing with Numba, so suspicious code in the non-basic algorithms is likely me trying to understand what it all means.
 
