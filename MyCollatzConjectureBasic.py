@@ -26,12 +26,12 @@ def main():
         prevNums = StepSim(prevNums, i + 1, [])
         
         if percent != lastPercent:
-            print(f"\rProgress: {percent}%", end="", flush=True) # percent calcs reduce speed by ~150000-300000/s
+            print(f"\rProgress: {percent}%", end = "", flush = True) # percent calcs reduce speed by ~150000-300000/s
             lastPercent = percent
 
-    print(f'\nCalculated up to 2**{math.log2(i):.2f} ({i})')
-    print(f'Calculation took: {(time.monotonic() - startTime):.2f} seconds')
-    print(f'Average integers checked per second: {(i/(time.monotonic() - startTime)):.2f}')
+    print(f'\nCalculated up to 2**{math.log2(i):.3f} ({i})')
+    print(f'Calculation took: {(time.monotonic() - startTime):.3f} seconds')
+    print(f'Average integers checked per second: {(i/(time.monotonic() - startTime)):.3f}')
 
 if __name__ == "__main__":
     main()
