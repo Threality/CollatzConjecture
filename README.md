@@ -13,3 +13,5 @@ Probably dont use CollatzConjecture.py or CollatzConjectureWithNumba.py. If your
 Also warning I used ChatGPT to help me learn multiprocessing with Numba, so suspicious code is likely me trying to understand what it all means.
 
 If you know how to optimise it further, please improve it but make sure you let me know because I want to see it!
+
+(Im not sure whether recursive is faster than using a while loop)
