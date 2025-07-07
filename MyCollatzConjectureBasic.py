@@ -26,7 +26,7 @@ def main():
         prevNums = StepSim(prevNums, i + 1, [])
         
         if percent != lastPercent:
-            print(f"\rProgress: {percent}%", end="", flush=True) # percent calcs reduce speed by ~2-300000/s
+            print(f"\rProgress: {percent}%", end="", flush=True) # percent calcs reduce speed by ~150000-300000/s
             lastPercent = percent
 
     print(f'\nCalculated up to 2**{math.log2(i):.2f} ({i})')
